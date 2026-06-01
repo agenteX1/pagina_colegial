@@ -7,8 +7,9 @@ import { Head } from './components/head'
 function App() {
 
   return (<>
-  <Contents />
   <Head/>
+  <Contents />
+  
   <Footer />
   </>
     
