@@ -1,6 +1,8 @@
+import { Home } from "../view/home";
+
 export function Contents (){
 
     return(
-        <h1>hola</h1>
+        <Home/>
     )
 }
