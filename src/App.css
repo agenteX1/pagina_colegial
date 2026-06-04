@@ -1,56 +1,71 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+  margin: 0%;
+  padding: 0%;
 }
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
-.header{
-    display: flex;
-    flex-direction: column;
-    background: rgb(0, 128, 55);
-    color: rgb(225,225,225);
-    padding: 20px 0px;
-    box-shadow: 0px 10px 25px rgb(0, 128, 55);   
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffff;
+  color: #008037;
+  padding: 7px;
+  box-shadow: 0px 10px 25px rgb(0, 128, 55);
+  border-bottom: 3px solid rgba(175, 171, 171, 0.381);
 }
-.img-logo{
-    width: 150px;
-    height: auto;
-    filter: drop-shadow(0px 5px 10px rgba(255, 255, 255, 0.6));
-    transition: transform 0.4s ease, filter 0.4s ease;
-    cursor: pointer;
-    margin:20px;
+.img-logo {
+  width: 100px;
+  height: auto;
+  filter: drop-shadow(0px 5px 10px rgba(255, 255, 255, 0.6));
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
+  cursor: pointer;
 }
 .img-logo:hover {
-    transform: scale(1.1) rotate(-3deg);
-    filter: drop-shadow(0px 8px 15px rgba(255, 255, 255, 0.9));
+  transform: scale(1.1) rotate(-3deg);
+  filter: drop-shadow(0px 8px 15px rgba(255, 255, 255, 0.9));
 }
-.conten-logo{
-    height: 200px;
-     display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+.conten-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
-.nav{
-    display: flex;
-    justify-content: center;
-    align-items: center2;
+.conten-logo h1 {
+  margin-left: 4px;
 }
-a{
-    margin: 5px;
-    text-decoration:none;
-    color: white;
-    transition: transform 0.4s ease;
-    background-color: rgb(255, 94, 0);
-    padding: 6px;
-    border-radius: 10px;
-    box-shadow: 3px 6px 5px rgba(255, 94, 0, 0.781);
+.nav {
+  display: flex;
+  align-items: center;
 }
-a:hover{
-    color: black;
-    transform: scale(1.1) rotate(-3deg); 
+a {
+  text-decoration: none;
+  color: white;
+  transition: transform 0.4s ease;
+  color: black;
+  margin-left: 5px;
+}
+a:hover {
+  color: #008037;
+  transform: scale(1.1) rotate(-3deg);
 }
 
+/* Estilos HOME */
+.hero-home {
+  height: 70vh;
+}
+.hero-home img {
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+}
+.waves {
+  height: 70vh;
+  top: 0px;
+  position: relative;
+}
