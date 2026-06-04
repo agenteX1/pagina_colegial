@@ -9,9 +9,9 @@ export function Head() {
         />
         <h1>Institucion Educativa Jose Acevedo Gomez </h1>
       </div>
-      <nav>
+      <nav className="nav">
         <a href="#inicio">inicio</a>
-        <a href="nuestro-colegio">nuestro-colegio</a>
+        <a href="nuestro-colegio">nuestro colegio</a>
         <a href="horizonte institucional">horizonte institucional</a>
         <a href="academia">academia</a>
         <a href="proyectos">proyectos</a>
