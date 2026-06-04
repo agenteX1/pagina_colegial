@@ -11,12 +11,19 @@ export function Head() {
       </div>
       <nav>
         <a href="#inicio">inicio</a>
+        <a href=""></a>
         <a href="nuestro-colegio">nuestro-colegio</a>
+        <a href=""></a>
         <a href="horizonte institucional">horizonte institucional</a>
+        <a href=""></a>
         <a href="academia">academia</a>
+        <a href=""></a>
         <a href="proyectos">proyectos</a>
+        <a href=""></a>
         <a href="convivencia">convivencia</a>
+        <a href=""></a>
         <a href="izada de bandera">izada de bandera</a>
+        <a href=""></a>
         <a href="comunicados y temas de interes">
           comunicados y temas de interes
         </a>
