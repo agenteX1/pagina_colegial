@@ -34,22 +34,24 @@ body {
 .conten-logo {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  width: 80%;
+  
 }
 .conten-logo h1 {
-  margin-left: 4px;
+  margin-left: 5px;
 }
 .nav {
   display: flex;
   align-items: center;
- 
+  flex-direction: column;
 }
 a {
   text-decoration: none;
   color: rgb(247, 243, 243);
   transition: transform 0.4s ease;
   color: black;
-  margin-left: 50px;
+  margin-left: 20px;
+  padding: 5px;
 }
 a:hover {
   color: #008037;
