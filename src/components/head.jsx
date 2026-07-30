@@ -1,4 +1,4 @@
-import { Menu } from "lucide-react";
+import * as Icons from "lucide-react";
 import { useState } from "react";
 
 export function Head() {
@@ -16,22 +16,49 @@ export function Head() {
           src="https://www.joseacevedo.edu.co/wp-content/uploads/2020/05/Escudo_IEJAG_png-1-915x1024.png"
           alt="simbolo del colegio"
         />
-        <h1>I.E Jose Acevedo Gomez </h1>
+        <h1>I.E Jose Acevedo Gomez</h1>
       </div>
       <button onClick={() => setviewmenu((prev) => !prev)}>
-        <Menu />
+        <Icons.Menu />
       </button>
       {viewmenu && (
         <nav className="nav">
-          <a href="">inicio</a>
-          <a href="nuestro-colegio">nuestro colegio</a>
-          <a href="horizonte institucional">horizonte institucional</a>
-          <a href="academia">academia</a>
-          <a href="proyectos">proyectos</a>
-          <a href="convivencia">convivencia</a>
-          <a href="izada de bandera">izada de bandera</a>
-          <a href="comunicados y temas de interes">Noticias</a>
-          <a href="redes sociales">redes sociales</a>
+          <li>
+            <Icons.House className="house" />
+            <a href="">inicio</a>
+          </li>
+          <li>
+            <Icons.University />
+            <a href="nuestro-colegio">nuestro colegio</a>
+          </li>
+          <li>
+            <Icons.Target />
+            <a href="horizonte institucional">horizonte institucional</a>
+          </li>
+          <li>
+            <Icons.GraduationCap />
+            <a href="academia">academia</a>
+          </li>
+          <li>
+            <Icons.FolderKanban />
+            <a href="proyectos">proyectos</a>
+          </li>
+          <li>
+            <Icons.Users />
+            <a href="convivencia">convivencia</a>
+          </li>
+          <li>
+            <Icons.Brain />
+            <a href="izada de bandera">izada de bandera</a>
+          </li>
+          <li>
+            <Icons.Newspaper />
+            <a href="comunicados y temas de interes">Noticias</a>
+          </li>
+          <li>
+            <Icons.GlobeLock />
+            <a href="redes sociales">redes sociales</a>
+          </li>
         </nav>
       )}
     </header>
