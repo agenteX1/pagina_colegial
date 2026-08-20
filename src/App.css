@@ -72,16 +72,59 @@ a:hover {
 
 /* Estilos HOME */
 .hero-home {
-  height: 70vh;
+  height: auto;
 }
 .hero-home img {
-  width: 100%;
-  height: 70vh;
+  width: 90%;
+  height: auto;
   position: absolute;
+  margin-left: 5%; ;
 }
 .waves {
   height: 610px;
   width: 100%;
   top: 40px;
   position: relative;
+}
+.Contenedor-1 {
+    display: flex;
+  flex-direction: row;
+  gap: 16px; 
+  flex-wrap: wrap;}
+
+.contenedor-2 {
+    background-color: #ffffff;
+    width: 260px;
+    height: 420px;
+    margin: 10px;
+    box-shadow: 0px 10px 25px rgba(255,215,0,0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+}
+.contenedor-2:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0px 15px 30px rgba(255,215,0,0.5);
+}
+/* Animación general para las imágenes de autos */
+.Miura, .Countach, .Revuelto {
+    border-radius: 15px 15px 0 0;
+    width: 260px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+/* Efecto al pasar el mouse */
+.Miura:hover, .Countach:hover, .Revuelto:hover {
+    transform: scale(1.08) rotate(-2deg); /* zoom + ligera inclinación */
+    box-shadow: 0px 15px 30px rgba(255, 215, 0, 0.6); /* sombra dorada */
+}
+
+/* Animación sutil en bucle */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+}
+
+.Miura, .Countach, .Revuelto {
+    animation: pulse 3s ease-in-out; /* efecto respiración */
 }
