@@ -79,21 +79,44 @@ a:hover {
 }
 .contenedor-1 {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,max-contex);
   gap: 20px;
 }
 
 .contenedor-2 {
-  flex-shrink: 0;
   padding: 20px;
   background-color: #1ce5f3;
   border-radius: 8px;
-  width: 200px;
-  height: 200px;
   margin: 10px;
+  width: 100px;
+  height: 250px;s
+  max-height: 2000px;
 }
 
 .contenedor-2:hover {
   transform: translateY(-8px) scale(1.05);
   box-shadow: 0px 15px 30px rgba(255, 123, 0, 0.836);
+}
+
+.hero-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+  color: rgb(0, 136, 170);
+  flex-direction: column;
+}
+
+.video1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }

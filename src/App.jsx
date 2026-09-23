@@ -4,6 +4,7 @@ import { Contents } from "./components/contents";
 import { Footer } from "./components/footer";
 import { Head } from "./components/head";
 
+
 function App() {
   return (
     <>
