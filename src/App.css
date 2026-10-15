@@ -82,52 +82,115 @@ a:hover {
   top: 40px;
   position: relative;
 }
+/* Contenedor padre */
 .contenedor-1 {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(255,255,255);
   justify-content: center;
   align-items: center;
+  gap: 30px; /* Usa gap en lugar de márgenes laterales manuales para un espaciado perfecto */
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
+/* Tarjetas individuales */
 .contenedor-2 {
   display: flex;
-  width: 400px;
-    height: 420px;
-    margin: 10px;
-    margin-left: 40px;
-    margin-top: 60px;
-    border-radius: 15px;
-    text-align: center;
-  background-color: rgb(0, 128, 55);
-  justify-content: center;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  box-shadow: 0px 10px 25px rgb(255, 255, 255);
-  
-}
-.contenedor-2:hover{
-  box-shadow: 0px 15px 30px rgb(0, 128, 55);
-  transform: translateY(-8px) scale(1.05);
-}
-
-.hero-home {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 30px;
-  color: rgb(0, 0, 0);
-  flex-direction: column;
+  
+  width: 100%;
+  max-width: 350px;
+  height: 380px;
+  
+  /* Fondo blanco limpio con un pequeño toque de cristal flotante */
+  background: #ffffff;
+  border-radius: 20px;
+  
+  /* Borde superior decorativo verde escolar */
+  border-top: 6px solid #1e8449;
+  
+  /* Sombra suave y moderna (elimina el fondo blanco de sombra anterior) */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  
+  /* Transiciones suaves */
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
+/* Texto dentro de las tarjetas */
+.contenedor-2 h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+/* Efecto al pasar el mouse (Hover) */
+.contenedor-2:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 35px rgba(30, 132, 73, 0.2);
+  border-top-color: #27ae60;
+}
+
+/* Título "Nuestra institución" */
+.hero-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-family: 'Poppins', 'Segoe UI', sans-serif; /* Tipografía más limpia que Impact */
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a252f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+/* Detalle decorativo debajo del título */
+.hero-home::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #1e8449;
+  border-radius: 2px;
+  margin-top: 8px;
+}
+
+/* Contenedor del video */
 .video1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Estilo para el elemento <video> o <iframe> dentro del contenedor */
+.video1 video,
+.video1 iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Mantiene la proporción correcta del reproductor */
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Sombra elegante */
+  outline: none;
+  overflow: hidden;
 }
 
 .footer {
