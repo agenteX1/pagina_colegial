@@ -3,10 +3,9 @@ import Hero from "./hero";
 
 export function Home() {
   return (
-    <div>
-      <Hero />
-
+      <div>
       <Contens />
-    </div>
+       <Hero />
+      </div>
   );
 }

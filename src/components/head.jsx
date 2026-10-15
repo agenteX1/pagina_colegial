@@ -18,7 +18,7 @@ export function Head() {
         />
         <h1>I.E Jose Acevedo Gomez</h1>
       </div>
-      <button onClick={() => setviewmenu((prev) => !prev)}>
+      <button className="boton-1" onClick={() => setviewmenu((prev) => !prev)}>
         <Icons.Menu />
       </button>
       {viewmenu && (
