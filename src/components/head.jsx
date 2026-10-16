@@ -31,25 +31,10 @@ export function Head() {
             <Icons.University />
             <a href="nuestro-colegio">nuestro colegio</a>
           </li>
-          <li>
-            <Icons.Target />
-            <a href="horizonte institucional">horizonte institucional</a>
-          </li>
+          
           <li>
             <Icons.GraduationCap />
             <a href="academia">academia</a>
-          </li>
-          <li>
-            <Icons.FolderKanban />
-            <a href="proyectos">proyectos</a>
-          </li>
-          <li>
-            <Icons.Users />
-            <a href="convivencia">convivencia</a>
-          </li>
-          <li>
-            <Icons.Brain />
-            <a href="izada de bandera">izada de bandera</a>
           </li>
           <li>
             <Icons.Newspaper />
@@ -58,6 +43,10 @@ export function Head() {
           <li>
             <Icons.GlobeLock />
             <a href="redes sociales">redes sociales</a>
+          </li>
+          <li>
+            <Icons.Send />
+            <a href="comunidad">comunidad</a>
           </li>
         </nav>
       )}
