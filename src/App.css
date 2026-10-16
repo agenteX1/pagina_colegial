@@ -12,8 +12,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffff;
-  color: #008037;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 128, 55);
   padding: 7px;
   box-shadow: 0px 10px 25px rgb(0, 128, 55);
   border-bottom: 3px solid rgba(175, 171, 171, 0.381);
@@ -82,13 +82,13 @@ a:hover {
   top: 40px;
   position: relative;
 }
-/* Contenedor padre */
+
 .contenedor-1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 30px; /* Usa gap en lugar de márgenes laterales manuales para un espaciado perfecto */
+  gap: 30px; 
   width: 100%;
   max-width: 1200px;
   margin: 40px auto;
@@ -96,7 +96,7 @@ a:hover {
   box-sizing: border-box;
 }
 
-/* Tarjetas individuales */
+
 .contenedor-2 {
   display: flex;
   flex-direction: column;
@@ -105,43 +105,59 @@ a:hover {
   
   width: 100%;
   max-width: 350px;
-  height: 380px;
+  height: 480px;
   
-  /* Fondo blanco limpio con un pequeño toque de cristal flotante */
-  background: #ffffff;
+  
+  background: rgb(255, 255, 255);
   border-radius: 20px;
   
-  /* Borde superior decorativo verde escolar */
-  border-top: 6px solid #1e8449;
   
-  /* Sombra suave y moderna (elimina el fondo blanco de sombra anterior) */
+  border-top: 6px solid rgb(30, 132, 73);
+  
+  
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   
-  /* Transiciones suaves */
+  
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   position: relative;
   overflow: hidden;
 }
 
-/* Texto dentro de las tarjetas */
+
 .contenedor-2 h1 {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: rgb(44, 62, 80);
   margin: 0;
   text-transform: capitalize;
   letter-spacing: 0.5px;
 }
 
-/* Efecto al pasar el mouse (Hover) */
+
 .contenedor-2:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 35px rgba(30, 132, 73, 0.2);
-  border-top-color: #27ae60;
+  border-top-color: rgb(39, 174, 96);
+  
+}
+.boton-2{
+  background-color: #134f2c; 
+  color: rgb(255, 255, 255); 
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px; 
+  display: inline-flex;
+  align-items: center;
+  gap: 12px; 
+  cursor: pointer;
+  text-decoration: none;
 }
 
-/* Título "Nuestra institución" */
+
 .hero-home {
   display: flex;
   flex-direction: column;
@@ -149,26 +165,25 @@ a:hover {
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 25px;
-  font-family: 'Poppins', 'Segoe UI', sans-serif; /* Tipografía más limpia que Impact */
+  font-family: 'Poppins', 'Segoe UI', sans-serif; 
   font-size: 2rem;
   font-weight: 700;
-  color: #1a252f;
+  color: rgb(26, 37, 47);
   text-transform: uppercase;
   letter-spacing: 1px;
   position: relative;
 }
 
-/* Detalle decorativo debajo del título */
+
 .hero-home::after {
   content: '';
   width: 60px;
   height: 4px;
-  background-color: #1e8449;
+  background-color: rgb(30, 132, 73);
   border-radius: 2px;
   margin-top: 8px;
 }
 
-/* Contenedor del video */
 .video1 {
   display: flex;
   justify-content: center;
@@ -180,15 +195,15 @@ a:hover {
   box-sizing: border-box;
 }
 
-/* Estilo para el elemento <video> o <iframe> dentro del contenedor */
+
 .video1 video,
 .video1 iframe {
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9; /* Mantiene la proporción correcta del reproductor */
+  aspect-ratio: 16 / 9; 
   border-radius: 16px;
   border: none;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Sombra elegante */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); 
   outline: none;
   overflow: hidden;
 }
@@ -224,21 +239,21 @@ a:hover {
 }
 
 .footer-section p {
-  color: #d8e5df;
+  color: rgb(216, 229, 223);
   line-height: 1.6;
   margin: 8px 0;
 }
 
 .footer-section a {
   display: block;
-  color: #d8e5df;
+  color: rgb(216, 229, 223);
   text-decoration: none;
   margin: 9px 0;
   transition: 0.3s;
 }
 
 .footer-section a:hover {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   transform: translateX(5px);
 }
 
@@ -255,11 +270,11 @@ a:hover {
 
 .footer-bottom p {
   margin: 0;
-  color: #cbd8d2;
+  color: rgb(203, 216, 210);
   font-size: 14px;
 }
 
-/* Adaptación para celulares */
+
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;
