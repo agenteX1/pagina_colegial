@@ -1,8 +1,12 @@
-import { Home } from "../view/home";
+import { Footer } from "./footer";
+import { Head } from "./head";
 
-export function Contents (){
-
-    return(
-        <Home/>
-    )
+export function Contents({ children }) {
+  return (
+    <>
+      <Head />
+      {children}
+      <Footer />
+    </>
+  );
 }

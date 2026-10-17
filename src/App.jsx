@@ -1,19 +1,13 @@
-import { useState } from "react";
 import "./App.css";
 import { Contents } from "./components/contents";
-import { Footer } from "./components/footer";
-import { Head } from "./components/head";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { BrowserRouter } from "react-router-dom";
+import Router from "./router";
 
 function App() {
   return (
-    <>
-    
-      <Head />
-      <Contents />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
 
