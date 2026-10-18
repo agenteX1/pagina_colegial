@@ -3,10 +3,14 @@ import { useState } from "react";
 
 const enlaces = [
   { nombre: "Inicio", ruta: "/", Icono: Icons.House },
-  { nombre: "Nuestro colegio", ruta: "#nosotros", Icono: Icons.Landmark },
-  { nombre: "Academia", ruta: "#academia", Icono: Icons.GraduationCap },
+  {
+    nombre: "Nuestro colegio",
+    ruta: "/Nuestro-colegio",
+    Icono: Icons.Landmark,
+  },
+  { nombre: "Academia", ruta: "/Academia", Icono: Icons.GraduationCap },
   { nombre: "Noticias", ruta: "/noticias", Icono: Icons.Newspaper },
-  { nombre: "Comunidad", ruta: "#comunidad", Icono: Icons.Users },
+  { nombre: "Comunidad", ruta: "/comunidad", Icono: Icons.Users },
 ];
 
 export function Head() {
