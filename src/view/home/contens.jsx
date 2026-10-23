@@ -8,7 +8,7 @@ const galeria = [
     titulo: "Una comunidad que deja huella.",
     descripcion:
       "Conoce las personas, la historia y los valores que dan vida a nuestra institución.",
-    imagen: "/lamine sena.jpg",
+    imagen: "public/ft colegio.jpeg",
     alt: "Comunidad de la institución educativa",
     Icono: Landmark,
     enlace: "#nosotros",
@@ -22,7 +22,7 @@ const galeria = [
     titulo: "El conocimiento abre caminos.",
     descripcion:
       "Experiencias, proyectos y aprendizajes que inspiran nuevas posibilidades.",
-    imagen: "/mia colegio.jpeg",
+    imagen: "public/WhatsApp Image 2026-10-23 at 5.21.48 PM (1).jpeg",
     alt: "Experiencias y actividades académicas",
     Icono: BookOpen,
     enlace: "#academia",
@@ -36,7 +36,7 @@ const galeria = [
     titulo: "Aquí pasan grandes cosas.",
     descripcion:
       "Momentos, encuentros y actividades que construyen nuestros recuerdos.",
-    imagen: "/Gemini_Generated_Image_y9fxjny9fxjny9fx.jpg",
+    imagen: "public/el hueso.jpeg",
     alt: "Momentos de la vida institucional",
     Icono: Camera,
     enlace: "#noticias",

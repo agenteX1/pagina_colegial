@@ -15,30 +15,29 @@ import { useState } from "react";
 const mejoresIcfes = [
   {
     id: 1,
-    nombre: "Juan Mateo Pastrana",
-    año: "Promoción 2024",
-    puntaje: "412 / 500",
-    destaque: "Mejor ICFES Municipal",
-    carrera: "Ingeniería de Sistemas",
-    foto: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80",
+    nombre: "Jose Luis Capera",
+    año: "Promoción 2026",
+    puntaje: "339 / 500",
+    destaque: "Mejor ICFES institucional",
+    foto: "public/Capera.jpeg",
   },
   {
     id: 2,
-    nombre: "María Fernanda Gómez",
-    año: "Promoción 2023",
-    puntaje: "398 / 500",
-    destaque: "Beca Excelencia Académica",
-    carrera: "Medicina",
-    foto: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80",
+    nombre: "Isabella Arguello",
+    año: "Promoción 2026",
+    puntaje: "338 / 500",
+    destaque: "",
+    carrera: "",
+    foto: "public/isabella.jpeg",
   },
   {
     id: 3,
-    nombre: "Carlos Andrés Silva",
-    año: "Promoción 2022",
-    puntaje: "390 / 500",
-    destaque: "Puntaje Sobresaliente Ciencias",
-    carrera: "Licenciatura en Matemáticas",
-    foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+    nombre: "Camila Muñoz Plazas",
+    año: "Promoción 2026",
+    puntaje: "332 / 500",
+    destaque: "Puntaje Sobresaliente Ciencias Sociales",
+    carrera: "",
+    foto: "public/camila.jpeg",
   },
 ];
 
@@ -46,21 +45,21 @@ const mejoresIcfes = [
 const directivosHistoricos = [
   {
     id: 1,
-    nombre: "Lic. Roberto Martínez",
+    nombre: "Lucas Meneses",
     cargo: "Rector Institucional",
-    periodo: "2018 - Presente",
+    periodo: "2026 - Presente",
     logro:
       "Lideró la modernización tecnológica y la articulación con programas técnicos.",
-    foto: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80",
+    foto: "public/rector.jpeg",
   },
   {
     id: 2,
-    nombre: "Dra. Elena Ramos",
-    cargo: "Coordinadora Académica",
-    periodo: "2015 - Presente",
+    nombre: "Mayra Zapata Lizcano",
+    cargo: "Coordinadora",
+    periodo: "2026 - Presente",
     logro:
       "Diseñó el plan de fortalecimiento pedagógico Saber 11 y proyectos transversales.",
-    foto: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+    foto: "public/cordi.jpeg",
   },
 ];
 
@@ -68,21 +67,21 @@ const directivosHistoricos = [
 const docentesDestacados = [
   {
     id: 1,
-    nombre: "Prof. Alberto Ramírez",
-    area: "Matemáticas y Física",
-    reconocimiento: "Docente del Año 2023",
+    nombre: "Marcela Cristina Rodríguez",
+    area: "Ciencias Naturales",
+    reconocimiento: "Docente del Año 2026",
     descripcion:
       "Reconocido por su pedagogía innovadora y constante preparación de los estudiantes para pruebas de estado.",
-    foto: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+    foto: "public/profe cristina.jpeg",
   },
   {
     id: 2,
-    nombre: "Profa. Carmen Lucia Ortiz",
-    area: "Lengua Castellana e Inglés",
+    nombre: "Sandro Guaca",
+    area: "ciencias sociales",
     reconocimiento: "Líder de Proyectos Lectores",
     descripcion:
-      "Impulsora de ferias del libro escolares y concursos regionales de oratoria y escritura.",
-    foto: "https://images.unsplash.com/photo-1580894732413-b7ce29221160?auto=format&fit=crop&w=600&q=80",
+      "Impulsor de ferias del libro escolares y concursos regionales de oratoria y escritura.",
+    foto: "public/WhatsApp Image 2026-10-23 at 5.21.48 PM.jpeg",
   },
   {
     id: 3,
@@ -114,12 +113,13 @@ export default function Academia() {
 
           <div className="mt-6 max-w-3xl">
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-              Excelencia académica y <span className="text-green-200">reconocimientos.</span>
+              Excelencia académica y{" "}
+              <span className="text-green-200">reconocimientos.</span>
             </h1>
             <p className="mt-4 text-base leading-relaxed text-green-50/90 sm:text-lg">
-              Homenaje a los estudiantes destacados en las pruebas ICFES, a nuestros
-              maestros ejemplares y a los directivos que han guiado con éxito el rumbo
-              institucional.
+              Homenaje a los estudiantes destacados en las pruebas ICFES, a
+              nuestros maestros ejemplares y a los directivos que han guiado con
+              éxito el rumbo institucional.
             </p>
           </div>
         </div>
@@ -180,7 +180,8 @@ export default function Academia() {
                 Orgullo Estudiantil - Pruebas Saber 11°
               </h2>
               <p className="mt-2 text-sm text-gray-600">
-                Estudiantes que dejaron en alto el nombre de la Institución Educativa José Acevedo Gómez.
+                Estudiantes que dejaron en alto el nombre de la Institución
+                Educativa José Acevedo Gómez.
               </p>
             </div>
 
@@ -212,7 +213,10 @@ export default function Academia() {
                     {estudiante.destaque}
                   </p>
                   <p className="mt-3 text-xs text-gray-500">
-                    Sigue su camino en: <span className="font-semibold text-gray-700">{estudiante.carrera}</span>
+                    Sigue su camino en:{" "}
+                    <span className="font-semibold text-gray-700">
+                      {estudiante.carrera}
+                    </span>
                   </p>
                 </div>
               ))}
@@ -231,7 +235,8 @@ export default function Academia() {
                 Nuestros Maestros Ejemplares
               </h2>
               <p className="mt-2 text-sm text-gray-600">
-                Docentes cuya labor pedagógica ha dejado una huella imborrable en las aulas.
+                Docentes cuya labor pedagógica ha dejado una huella imborrable
+                en las aulas.
               </p>
             </div>
 
@@ -278,7 +283,8 @@ export default function Academia() {
                 Rectores y Equipo Directivo
               </h2>
               <p className="mt-2 text-sm text-gray-600">
-                Líderes que han transformado y guiado la gestión académica de la institución.
+                Líderes que han transformado y guiado la gestión académica de la
+                institución.
               </p>
             </div>
 
