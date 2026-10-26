@@ -2,11 +2,11 @@ import * as Icons from "lucide-react";
 import { useState } from "react";
 
 const enlaces = [
-  { nombre: "Inicio", ruta: "#inicio" },
-  { nombre: "Nuestro colegio", ruta: "#institucion" },
-  { nombre: "Academia", ruta: "#explora" },
-  { nombre: "Noticias", ruta: "#noticias" },
-  { nombre: "Comunidad", ruta: "#comunidad" },
+  { nombre: "Inicio", ruta: "/" },
+  { nombre: "Nuestro colegio", ruta: "/Nuestro-colegio" },
+  { nombre: "Academia", ruta: "/Academia" },
+  { nombre: "Noticias", ruta: "/noticias" },
+  { nombre: "Comunidad", ruta: "/comunidad" },
 ];
 
 export function Head() {

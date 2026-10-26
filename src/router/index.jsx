@@ -14,7 +14,7 @@ export default function Router() {
           <Contents>
             <Outlet />
           </Contents>
-        }
+        } 
       >
         <Route path="/" element={<Home />} />
         <Route path="/noticias" element={<Noticias />} />

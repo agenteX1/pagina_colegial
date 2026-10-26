@@ -78,19 +78,19 @@ const docentesDestacados = [
     id: 2,
     nombre: "Sandro Guaca",
     area: "ciencias sociales",
-    reconocimiento: "Líder de Proyectos Lectores",
+    reconocimiento: "catalizador de las ciencias pilíticas y representante para las campañas de elecciones de el gobierno estudiantil",
     descripcion:
-      "Impulsor de ferias del libro escolares y concursos regionales de oratoria y escritura.",
+      ".",
     foto: "public/WhatsApp Image 2026-10-23 at 5.21.48 PM.jpeg",
   },
   {
     id: 3,
-    nombre: "Prof. Diego Fernando Hoyos",
-    area: "Ciencias Naturales y Química",
-    reconocimiento: "Mentor de Feria de Ciencias",
+    nombre: "",
+    area: "",
+    reconocimiento: "",
     descripcion:
-      "Coordinador de proyectos ambientales y experimentos ecológicos galardonados a nivel departamental.",
-    foto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80",
+      "",
+    foto: "",
   },
 ];
 

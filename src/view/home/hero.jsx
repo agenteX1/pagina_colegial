@@ -32,7 +32,7 @@ export default function Hero() {
         className="relative mx-auto mt-3 h-[390px] max-w-[1500px] overflow-hidden rounded-[1.5rem] bg-[#052f1b] text-white shadow-sm sm:mx-5 sm:h-[430px] lg:mx-8 lg:h-[470px]"
       >
         <img
-          src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=2000&q=90"
+          src="public/inicio col.jpeg"
           alt="Estudiantes en una institución educativa"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
@@ -87,7 +87,7 @@ export default function Hero() {
           {[
             {
               Icon: Icons.Landmark,
-              titulo: "+ 40 años",
+              titulo: "+ 50 años",
               texto: "de historia",
             },
             {
