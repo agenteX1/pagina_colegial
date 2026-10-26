@@ -1,115 +1,102 @@
+import {
+  ArrowUpRight,
+  BookOpen,
+  HeartHandshake,
+  Sprout,
+  Star,
+} from "lucide-react";
 import Hero from "./hero";
-import { Contens } from "./contens";
-import { ArrowUpRight, BookOpen, HeartHandshake, Sprout } from "lucide-react";
+import Contens from "./contens";
+
+const valores = [
+  {
+    Icono: BookOpen,
+    titulo: "Formación académica",
+    texto: "Aprendizaje significativo para la vida.",
+  },
+  {
+    Icono: HeartHandshake,
+    titulo: "Convivencia y valores",
+    texto: "Una comunidad que se respeta y se apoya.",
+  },
+  {
+    Icono: Sprout,
+    titulo: "Desarrollo integral",
+    texto: "Talento, creatividad y participación.",
+  },
+  {
+    Icono: Star,
+    titulo: "Proyección al futuro",
+    texto: "Estudiantes preparados para nuevos desafíos.",
+  },
+];
 
 export function Home() {
   return (
-    <main>
-      {/* Presentación principal */}
+    <main className="overflow-hidden bg-white text-[#12251a]">
       <Hero />
-
-      {/* Galería institucional */}
+      <section className="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-5 py-6 sm:grid-cols-2 sm:px-8 lg:grid-cols-4 lg:px-12">
+        {valores.map(({ Icono, titulo, texto }) => (
+          <article
+            key={titulo}
+            className="group rounded-[1.5rem] border border-gray-100 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-green-100 hover:shadow-lg hover:shadow-green-900/5"
+          >
+            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#e4f4e8] text-[#08763b] transition group-hover:bg-[#08763b] group-hover:text-white">
+              <Icono size={23} strokeWidth={1.8} />
+            </span>
+            <h3 className="mt-5 font-bold text-[#14291c]">{titulo}</h3>
+            <p className="mt-2 text-sm leading-6 text-gray-600">{texto}</p>
+          </article>
+        ))}
+      </section>
       <Contens />
 
-      {/* Franja editorial */}
-      <section className="relative border-y border-green-100 bg-[#f6f8f4]">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 md:grid-cols-3">
-          <div className="flex items-start gap-4 border-b border-green-100 px-6 py-8 sm:px-8 md:border-b-0 md:border-r">
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-white text-[#008037] shadow-sm">
-              <BookOpen size={23} strokeWidth={1.6} />
-            </span>
-            <div>
-              <h3 className="font-semibold text-[#173d28]">
-                Aprender cada día
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
-                El conocimiento como punto de partida para descubrir nuevas
-                posibilidades.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-4 border-b border-green-100 px-6 py-8 sm:px-8 md:border-b-0 md:border-r">
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-white text-[#008037] shadow-sm">
-              <HeartHandshake size={23} strokeWidth={1.6} />
-            </span>
-            <div>
-              <h3 className="font-semibold text-[#173d28]">
-                Crecer en comunidad
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
-                La convivencia, el respeto y la colaboración también forman
-                parte del aprendizaje.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-4 px-6 py-8 sm:px-8">
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-white text-[#008037] shadow-sm">
-              <Sprout size={23} strokeWidth={1.6} />
-            </span>
-            <div>
-              <h3 className="font-semibold text-[#173d28]">
-                Construir el futuro
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
-                Acompañar a cada estudiante en el desarrollo de sus capacidades
-                y aspiraciones.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Invitación a la comunidad */}
       <section
         id="comunidad"
-        className="relative bg-white px-5 sm:px-8 sm:py-8"
+        className="bg-white px-4 py-6 sm:px-8 sm:py-8 lg:py-10"
       >
         <div className="mx-auto max-w-7xl">
-          <div className="relative isolate overflow-hidden bg-[#006b2d]">
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute -right-20 -top-24 h-80 w-80 rounded-full border border-white/10 sm:h-[28rem] sm:w-[28rem]"
-            />
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute -right-8 -top-12 h-56 w-56 rounded-full border border-white/10 sm:h-80 sm:w-80"
-            />
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute bottom-0 right-0 h-1.5 w-1/3 bg-white/20"
+          <div className="group relative isolate h-[230px] overflow-hidden rounded-[1.5rem] bg-[#064e2a] shadow-lg sm:h-[270px] lg:h-[300px]">
+            {/* Fotografía de fondo */}
+            <img
+              src="/mia colegio.jpeg"
+              alt="Comunidad educativa José Acevedo Gómez"
+              loading="lazy"
+              className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.02]"
             />
 
-            <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_auto] lg:items-end">
-              <div className="max-w-3xl px-7 py-12 sm:px-12 sm:py-16 ">
-                <p className="flex items-center gap-3 text-[11px] font-bold tracking-[0.22em] text-green-200 sm:text-xs">
-                  <span className="h-px w-8 bg-green-200" />
-                  INSTITUCIÓN EDUCATIVA JOSÉ ACEVEDO GÓMEZ
-                </p>
+            {/* Degradado para mejorar la lectura */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#003b23]/95 via-[#064e2a]/75 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#032616]/30 via-transparent to-transparent" />
 
-                <h2 className="mt-6 text-4xl font-semibold leading-[1.12] tracking-tight text-white sm:text-5xl lg:text-6xl">
+            {/* Decoración circular */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute -right-12 -bottom-32 h-64 w-64 rounded-full border border-white/20 sm:h-80 sm:w-80"
+            />
+
+            {/* Contenido */}
+            <div className="relative z-10 flex h-full items-center px-6 py-5 sm:px-10 sm:py-8 lg:px-14">
+              <div className="max-w-[540px]">
+                <h2 className="text-2xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-3xl lg:text-4xl">
                   La educación se construye
-                  <span className="block text-green-200">entre todos.</span>
+                  <span className="block text-[#b8efb5]">entre todos.</span>
                 </h2>
 
-                <p className="mt-6 max-w-xl text-sm leading-7 text-white/80 sm:text-base sm:leading-8">
+                <p className="mt-3 max-w-[420px] text-[10px] leading-[1.5] text-white/90 sm:mt-4 sm:text-xs lg:text-sm">
                   Estudiantes, familias, docentes y comunidad: cada persona
                   aporta a la construcción de un entorno donde aprender tiene
                   sentido y el futuro comienza a tomar forma.
                 </p>
-              </div>
 
-              <div className="relative px-7 pb-10 sm:px-12 lg:px-0 lg:pb-16 lg:pr-16">
                 <a
                   href="#contacto"
-                  className="group inline-flex min-h-14 items-center justify-center gap-4 border border-white/50 px-6 py-4 text-sm font-semibold text-white transition duration-300 hover:border-white hover:bg-white hover:text-[#006b2d]"
+                  className="mt-4 inline-flex items-center gap-3 rounded-full bg-white px-4 py-2 text-[10px] font-bold text-[#075b2b] shadow-md transition-all duration-300 hover:bg-[#b8efb5] sm:mt-5 sm:px-5 sm:py-2.5 sm:text-xs"
                 >
                   Conecta con nosotros
-                  <ArrowUpRight
-                    size={19}
-                    className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-                  />
+                  <span className="text-sm transition-transform duration-300 group-hover:translate-x-1">
+                    →
+                  </span>
                 </a>
               </div>
             </div>
@@ -119,3 +106,4 @@ export function Home() {
     </main>
   );
 }
+export default Home;
